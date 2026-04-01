@@ -1,4 +1,5 @@
 import React from "react";
+import * as FaIcons from "react-icons/fa";
 
 // 1. Accept cartItems as a prop
 export default function Cart({ cartItems, onRemove, onCheckout }) {
@@ -25,8 +26,11 @@ export default function Cart({ cartItems, onRemove, onCheckout }) {
               >
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-xl">
-                    📝{" "}
-                    {/* Placeholder icon, or use item.icon if it exists in your JSON */}
+                    <span className="text-2xl">
+                      {React.createElement(
+                        FaIcons[item.icon] || FaIcons.FaQuestionCircle,
+                      )}
+                    </span>
                   </div>
 
                   <div>
