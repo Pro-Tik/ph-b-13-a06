@@ -42,6 +42,7 @@ function App() {
         cartItems={cartItems}
         onAddToCart={handleAddToCart}
         onRemove={handleRemoveFromCart}
+        onCheckout={handleCheckout}
       ></ToolsSection>
       <Steps></Steps>
       <Pricing></Pricing>
