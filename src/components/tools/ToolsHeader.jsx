@@ -1,6 +1,6 @@
 import React from "react";
 
-const ToolsHeader = ({ activeTab, setActiveTab }) => {
+const ToolsHeader = ({ activeTab, setActiveTab, cartCount }) => {
   const activeStyle = "bg-[#7c3aed] text-white shadow-md";
   const inactiveStyle =
     "text-gray-500 hover:text-gray-800 bg-transparent shadow-none";
@@ -16,7 +16,7 @@ const ToolsHeader = ({ activeTab, setActiveTab }) => {
 
       {/* Toggle Pill */}
       <div className="inline-flex items-center bg-gray-50 border border-gray-100 p-1.5 rounded-full shadow-sm">
-        <button 
+        <button
           onClick={() => setActiveTab("products")}
           className={`px-8 py-2.5 rounded-full text-sm font-bold transition ${
             activeTab === "products" ? activeStyle : inactiveStyle
@@ -24,18 +24,17 @@ const ToolsHeader = ({ activeTab, setActiveTab }) => {
         >
           Products
         </button>
-        <button 
+        <button
           onClick={() => setActiveTab("cart")}
           className={`px-8 py-2.5 rounded-full text-sm font-bold transition ${
             activeTab === "cart" ? activeStyle : inactiveStyle
           }`}
         >
-          Cart (2)
+          Cart ({cartCount})
         </button>
       </div>
     </div>
   );
-  
 };
 
 export default ToolsHeader;

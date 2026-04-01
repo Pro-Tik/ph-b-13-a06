@@ -1,6 +1,6 @@
 import React from "react";
 import * as FaIcons from "react-icons/fa";
-export default function Cards({ data }) {
+export default function Cards({ data, onAddToCart }) {
   console.log("Cards received data:", data);
 
   // 1. Show the spinner if data hasn't arrived yet
@@ -85,7 +85,10 @@ export default function Cards({ data }) {
             ))}
           </ul>
 
-          <button className="w-full bg-[#7c3aed] text-white py-4 rounded-2xl font-bold text-sm hover:bg-[#6d28d9] transform active:scale-95 transition-all shadow-md">
+          <button
+            onClick={() => onAddToCart(plan)}
+            className="w-full bg-[#7c3aed] text-white py-4 rounded-2xl font-bold text-sm hover:bg-[#6d28d9] transform active:scale-95 transition-all shadow-md"
+          >
             Buy Now
           </button>
         </div>
