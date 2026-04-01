@@ -1,0 +1,147 @@
+[
+  {
+    "id": "plan_basic_resume",
+    "name": "Basic Resume Builder",
+    "description": "Create simple and clean resumes with essential templates.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "badge": "Free",
+    "features": ["10+ templates", "Basic customization", "Export to PDF"],
+    "icon": "FaFileAlt"
+  },
+  {
+    "id": "plan_pro_resume",
+    "name": "Pro Resume Builder",
+    "description": "Advanced resume creation with ATS optimization and premium templates.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "badge": "🔥 Popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Custom sections",
+      "Export to PDF & DOCX"
+    ],
+    "icon": "FaStar"
+  },
+  {
+    "id": "plan_ai_resume",
+    "name": "AI Resume Assistant",
+    "description": "Generate resumes using AI with smart suggestions.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "badge": "⭐ Best Seller",
+    "features": [
+      "AI content generation",
+      "Keyword suggestions",
+      "Job matching",
+      "Real-time editing"
+    ],
+    "icon": "FaRobot"
+  },
+  {
+    "id": "plan_portfolio_basic",
+    "name": "Portfolio Starter",
+    "description": "Build a personal portfolio website quickly.",
+    "price": 5.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "badge": "🆕 New",
+    "features": ["5 templates", "Custom domain support", "Mobile responsive"],
+    "icon": "FaThLarge"
+  },
+  {
+    "id": "plan_portfolio_pro",
+    "name": "Portfolio Pro",
+    "description": "Advanced portfolio builder with full customization.",
+    "price": 49.99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "badge": "🔥 Popular",
+    "features": [
+      "50+ templates",
+      "SEO optimization",
+      "Analytics integration",
+      "Custom animations"
+    ],
+    "icon": "FaGlobe"
+  },
+  {
+    "id": "plan_cover_letter",
+    "name": "Cover Letter Generator",
+    "description": "Generate tailored cover letters instantly.",
+    "price": 4.99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "badge": "⭐ Best Seller",
+    "features": ["AI writing", "Multiple formats", "Custom tone selection"],
+    "icon": "FaEnvelope"
+  },
+  {
+    "id": "plan_interview_prep",
+    "name": "Interview Prep Kit",
+    "description": "Prepare for interviews with curated questions and answers.",
+    "price": 7.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "badge": "🔥 Popular",
+    "features": ["1000+ questions", "Mock interviews", "AI feedback"],
+    "icon": "FaMicrophone"
+  },
+  {
+    "id": "plan_linkedin_opt",
+    "name": "LinkedIn Optimizer",
+    "description": "Optimize your LinkedIn profile for better visibility.",
+    "price": 6.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "badge": "🆕 New",
+    "features": [
+      "Profile analysis",
+      "Keyword optimization",
+      "Headline suggestions"
+    ],
+    "icon": "FaLinkedin"
+  },
+  {
+    "id": "plan_job_tracker",
+    "name": "Job Application Tracker",
+    "description": "Track and manage your job applications efficiently.",
+    "price": 3.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "badge": "🔥 Popular",
+    "features": ["Application tracking", "Status updates", "Reminders"],
+    "icon": "FaTasks"
+  },
+  {
+    "id": "plan_career_bundle",
+    "name": "Career Growth Bundle",
+    "description": "All-in-one package for job seekers and professionals.",
+    "price": 99.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "badge": "💎 Premium",
+    "features": [
+      "Resume builder",
+      "Portfolio",
+      "AI tools",
+      "Interview prep",
+      "Job tracking"
+    ],
+    "icon": "FaBoxOpen"
+  }
+]
