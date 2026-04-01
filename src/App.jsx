@@ -35,9 +35,6 @@ function App() {
 
   return (
     <>
-      <Navbar cartCount={cartItems.length} />
-      <Hero></Hero>
-      <StatsSection></StatsSection>
       <ToolsSection
         cartItems={cartItems}
         onAddToCart={handleAddToCart}
@@ -47,7 +44,14 @@ function App() {
       <Steps></Steps>
       <Pricing></Pricing>
       <Footer></Footer>
-      <ToastContainer position="top-right" autoClose={2000} hideProgressBar={false} newestOnTop closeOnClick pauseOnHover />
+      <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        pauseOnHover
+      />
     </>
   );
 }

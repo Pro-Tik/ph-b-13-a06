@@ -4,7 +4,12 @@ import Cards from "./Cards";
 import Cart from "./Cart";
 import axios from "axios";
 
-export default function ToolsSection({ cartItems, onAddToCart, onRemove, onCheckout }) {
+export default function ToolsSection({
+  cartItems,
+  onAddToCart,
+  onRemove,
+  onCheckout,
+}) {
   // 1. Create a state variable to hold your data
   const [plans, setPlans] = useState(null);
   const [activeTab, setactiveTab] = useState("products");
