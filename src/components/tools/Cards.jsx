@@ -35,13 +35,17 @@ export default function Cards({ data }) {
           {/* Optional Premium Badge */}
           {plan.price > 0 && (
             <span className="absolute top-6 right-6 px-4 py-1 rounded-full text-[10px] font-bold border bg-orange-100 text-orange-600 border-orange-200">
-              {plan.badge}
+              {plan.badge ? plan.badge : "Free"}
             </span>
           )}
 
           {/* Icon Container */}
           <div className="w-14 h-14 rounded-2xl mb-6 flex items-center justify-center bg-gray-50 group-hover:scale-110 transition-transform">
-            <span className="text-2xl">📝</span>
+            <span className="text-2xl">
+              {React.createElement(
+                FaIcons[plan.icon] || FaIcons.FaQuestionCircle,
+              )}
+            </span>
           </div>
 
           {/* Dynamic Content */}
