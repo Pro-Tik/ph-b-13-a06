@@ -50,7 +50,7 @@ const Navbar = ({ cartCount = 0 }) => {
             </span>
           )}
         </button>
-         <button className="bg-[#7c3aed] text-white px-6 py-2.5 rounded-xl text-sm font-bold hover:bg-[#6d28d9] transition shadow-md">
+        <button className="bg-[#7c3aed] hidden md:block text-white px-6 py-2.5 rounded-xl text-sm font-bold hover:bg-[#6d28d9] transition shadow-md">
           Login
         </button>
         <button className="bg-[#7c3aed] text-white px-6 py-2.5 rounded-xl text-sm font-bold hover:bg-[#6d28d9] transition shadow-md">
