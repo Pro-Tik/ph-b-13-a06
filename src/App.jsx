@@ -35,6 +35,9 @@ function App() {
 
   return (
     <>
+      <Navbar cartCount={cartItems.length} />
+      <Hero></Hero>
+      <StatsSection></StatsSection>
       <ToolsSection
         cartItems={cartItems}
         onAddToCart={handleAddToCart}
