@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import * as FaIcons from "react-icons/fa";
 export default function Cards({ data, onAddToCart }) {
   console.log("Cards received data:", data);
+  const [added, setAdded] = useState({});
 
   // 1. Show the spinner if data hasn't arrived yet
   if (!data) {
@@ -86,10 +87,20 @@ export default function Cards({ data, onAddToCart }) {
           </ul>
 
           <button
-            onClick={() => onAddToCart(plan)}
+            onClick={() => {
+              onAddToCart(plan);
+              setAdded((s) => ({ ...s, [plan.id]: true }));
+              setTimeout(() => {
+                setAdded((s) => {
+                  const copy = { ...s };
+                  delete copy[plan.id];
+                  return copy;
+                });
+              }, 1500);
+            }}
             className="w-full bg-[#7c3aed] text-white py-4 rounded-2xl font-bold text-sm hover:bg-[#6d28d9] transform active:scale-95 transition-all shadow-md"
           >
-            Buy Now
+            {added[plan.id] ? "Added to cart" : "Buy Now"}
           </button>
         </div>
       ))}

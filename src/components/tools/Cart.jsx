@@ -1,7 +1,7 @@
 import React from "react";
 
 // 1. Accept cartItems as a prop
-export default function Cart({ cartItems }) {
+export default function Cart({ cartItems, onRemove, onCheckout }) {
   // 2. Calculate the total price based on the actual items
   const total = cartItems.reduce((sum, item) => sum + item.price, 0);
 
@@ -39,7 +39,10 @@ export default function Cart({ cartItems }) {
                   </div>
                 </div>
 
-                <button className="text-[#ff4782] text-sm font-medium hover:text-[#e63e75] transition-colors px-2">
+                <button
+                  onClick={() => onRemove && onRemove(item.id)}
+                  className="text-[#ff4782] text-sm font-medium hover:text-[#e63e75] transition-colors px-2"
+                >
                   Remove
                 </button>
               </div>
@@ -56,6 +59,7 @@ export default function Cart({ cartItems }) {
         </div>
 
         <button
+          onClick={() => onCheckout && onCheckout()}
           disabled={cartItems.length === 0}
           className="w-full bg-[#8b3dff] text-white py-4 rounded-2xl font-bold text-sm hover:bg-[#7a35e6] transform active:scale-[0.98] transition-all shadow-md disabled:bg-gray-300 disabled:cursor-not-allowed"
         >
