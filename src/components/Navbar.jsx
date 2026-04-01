@@ -22,7 +22,7 @@ const Navbar = ({ cartCount = 0 }) => {
       </div>
 
       {/* Actions */}
-      <div className="flex items-center space-x-4 md:space-x-8">
+      <div className="flex items-center space-x-2 md:space-x-3">
         <button
           className={`relative flex items-center text-sm font-semibold px-3 py-1 rounded transition ${
             cartCount > 0
@@ -50,7 +50,9 @@ const Navbar = ({ cartCount = 0 }) => {
             </span>
           )}
         </button>
-
+         <button className="bg-[#7c3aed] text-white px-6 py-2.5 rounded-xl text-sm font-bold hover:bg-[#6d28d9] transition shadow-md">
+          Login
+        </button>
         <button className="bg-[#7c3aed] text-white px-6 py-2.5 rounded-xl text-sm font-bold hover:bg-[#6d28d9] transition shadow-md">
           Get Started
         </button>
